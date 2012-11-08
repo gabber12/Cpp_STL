@@ -17,7 +17,7 @@ int main(){
 	ne[9] = 24;
 	cout << n[9]<< ne[9]<< endl;
 	// n.check_tree();
-	avl<int, int> ::const_iterator it = n.begin();
+	
 	for(avl<int, int>::iterator it = n.begin(); it != n.end(); it++){
 		cout << (*it).first << " >> "<< (*it).second<<endl;
 	}

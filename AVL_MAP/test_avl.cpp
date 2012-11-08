@@ -12,16 +12,19 @@ int main(){
 	n.insert(pair<int, int> (3,4));
 	n.insert(pair<int, int> (8,10));
 	n.insert(pair<int, int> (7,11));
+	/* made another avl and copying older to new */
 	avl<int, int> ne ;
 	ne = n;
 	ne[9] = 24;
-	cout << n[9]<< ne[9]<< endl;
-	// n.check_tree();
 	
+
+	/* Printing The items */
+	cout <<"Printing items of map using Forward iterator" << endl;
 	for(avl<int, int>::iterator it = n.begin(); it != n.end(); it++){
 		cout << (*it).first << " >> "<< (*it).second<<endl;
 	}
-	
+
+	cout <<"Printing items of map using Reverse iterator" << endl;
 	for(avl<int, int>::reverse_iterator it = n.rbegin(); it != n.rend(); it++){
 		cout << (*it).first << " >> "<< (*it).second<<endl;
 	}

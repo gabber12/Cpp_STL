@@ -1,5 +1,5 @@
 #include <iostream>
-#include "avl_coorr.cpp"
+#include "avl_coorr.hpp"
 
 using namespace std;
 

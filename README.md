@@ -14,6 +14,6 @@ Soon To be Implemented - <br/>
 
 
 <h4>Avl Map </h4>
-All the Basic Operations like insertion deletion and search are O(n).<br/>
+All the Basic Operations like insertion deletion and search are O(log(n)).<br/>
 Rotation in avl is done in constant time.
 

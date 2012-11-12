@@ -433,17 +433,14 @@ public:
 		
 		
 		void operator++(){
-			nod* tmp;
+			
 			
 			if(itr->right != NULL){
 				
 				itr = left_most(itr->right);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
+
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
@@ -460,23 +457,19 @@ public:
 			}
 		}
 		void operator--(){
-			nod* tmp;
+			
 			
 			if(itr->left != NULL){
 				
 				itr = right_most(itr->left);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
 						return ;
 
-					}else if(itr->parent->p->first < itr->p->first){
+					}else if(itr->parent->p.first < itr->p.first){
 						
 						itr = itr->parent;
 						return ;
@@ -487,17 +480,13 @@ public:
 			}
 		}
 		void operator++(int){
-			nod* tmp;
+			
 			
 			if(itr->right != NULL){
 				
 				itr = left_most(itr->right);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
@@ -514,23 +503,19 @@ public:
 			}
 		}
 		void operator--(int){
-			nod* tmp;
+			
 			
 			if(itr->left != NULL){
 				
 				itr = right_most(itr->left);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
 						return ;
 
-					}else if(itr->parent->p->first < itr->p->first){
+					}else if(itr->parent->p.first < itr->p.first){
 						
 						itr = itr->parent;
 						return ;
@@ -587,17 +572,13 @@ public:
 		
 		
 		void operator++(){
-			nod* tmp;
+			
 			
 			if(itr->left != NULL){
 				
 				itr = right_most(itr->left);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
@@ -614,17 +595,13 @@ public:
 			}
 		}
 		void operator++(int){
-			nod* tmp;
+			
 			
 			if(itr->left != NULL){
 				
 				itr = right_most(itr->left);
 			} else {
 			
-				if(itr->parent == NULL) {
-						
-					itr = NULL;
-				}
 				while(true){
 					if(itr->parent == NULL){
 						itr = NULL;
